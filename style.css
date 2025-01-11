@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #eaca14;
+    --hover-color: #eaca1441;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", serif;
+    background-image: url('./images/artistic-blurry-colorful-wallpaper-background.jpg');
+}
+
+.navbar {   
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 30px;
+}
+
+.nav-links li {
+    font-weight: 600;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar-logo {
+    font-family: "Playwrite AU SA", serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.surname {
+    color: var(--primary-color);
+}
+
+.nav-links li:hover {
+    background-color: var(--hover-color);
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
